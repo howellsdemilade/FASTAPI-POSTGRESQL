@@ -35,3 +35,5 @@ async def create_questions(question: QuestionBase, db: db_dependency):
         db_choice = models.Choices(choice_text=choice.choice_text, is_correct=choice.is_correct, question_id=db_question.id)
         db.add(db_choice)
     db.commit()
+    
+# added new line
